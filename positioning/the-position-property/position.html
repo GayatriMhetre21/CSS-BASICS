@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positioning</title>
+
+        <style>
+            .static {
+                position: static;
+                /* border: 5px solid red;
+                height: 1000px; */
+            }
+
+            .relative {
+                position: relative;
+                top: 100px;
+                left: 100px;
+            }
+
+            .fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+            }
+
+            .absolute {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }
+
+            .sticky {
+                position: sticky;
+                top: 50px;
+
+            }
+
+            .placeholder {
+                height: 1200px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="static">This paragraph is static.</p>
+        <p class="relative">This paragraph is relative.
+            <span class="absolute">This span is absolute</span>
+        </p>
+        <p class="fixed">This paragraph is fixed.</p>
+        <p class="absolute">This paragraph is absolute.</p>
+        <p class="sticky">This paragraph is sticky.</p>
+        <div class="placeholder"></div>
+    </body>
+</html>
